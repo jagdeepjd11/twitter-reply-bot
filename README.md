@@ -7,6 +7,7 @@ var config = require('./config');
 var T = new Twit(config);
 
 var query = "alot";
+
 T.get('search/tweets',
     { q: query, count: 1, lang: "en" },
     function (_error, tweets) {
