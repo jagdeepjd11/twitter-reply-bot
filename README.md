@@ -11,7 +11,7 @@ var query = "alot";
 T.get('search/tweets',
     { q: query, count: 1, lang: "en" },
     function (_error, tweets) {
-        var tweetList = tweets['statuses'];
+        var tweetList = tweets['statuses'];}
     
         for (var i = 0; i < tweetList.length; i++) {
             var id = { id: tweetList[i].id_str }
